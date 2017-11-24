@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  color: #515151;
+  color: #9e9e9e;
   background-color: #2e2e2e;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -76,7 +76,7 @@ a strong {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  text-decoration: underline;
+/*  text-decoration: underline; */
 }
 
 /* Headings */

@@ -360,7 +360,7 @@ a.sidebar-nav-item:focus {
 }
 
 .footer {
-  /*background: white;*/
+  /* background: white; */
   color: $brand-color;
   text-align: center;
   min-height: 56px;

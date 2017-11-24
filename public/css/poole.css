@@ -60,7 +60,7 @@ html {
 
 body {
   color: #515151;
-  background-color: #fff;
+  background-color: #2e2e2e;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -428,4 +428,3 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
-@import "_sass/_social-icons";

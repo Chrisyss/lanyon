@@ -13,7 +13,20 @@
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
+<!--
+  </h3>
+  <nav class="menu-list">
+  {% for item in site.menu %}
+    <a href="{{ site.github.url }}{{ site.baseurl }}/{{ item.folder }}/{{ item.file }}" class="menu-link">{{ item.name }}</a>
+  {% endfor %}
 
+  {% for item in site.data.settings.social %}
+    <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
+  {% endfor %}
+
+  </nav>
+  </h3>
+  -->
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">

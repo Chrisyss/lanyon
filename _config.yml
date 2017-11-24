@@ -21,11 +21,12 @@ menu:
 - {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
 social:
-- {icon: 'twitter', link: 'https://twitter.com/paululele'}
-- {icon: 'facebook', link: 'https://www.facebook.com/Le.Paul.94'}
-- {icon: 'instagram', link: 'https://instagram.com/paululele'}
-- {icon: 'envelope', link: 'mailto:l.nguyen.paul@gmail.com'}
-- {icon: 'rss-square', link: 'feed.xml'}
+- {name: 'facebook', link: 'http://facebook.com/Schiefer.Chris'}
+- {name: 'linkedin', link: 'http://linkedin.com/username'}
+- {name: 'skype', link: 'http://skype.com/i_indee'}
+- {name: 'instagram', link: 'https://instagram.com/paululele'}
+- {name: 'twitter', link: 'https://twitter.com/paululele'}
+
 # About/contact
 author:
   name:             Christopher Schiefer

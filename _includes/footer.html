@@ -1,27 +1,13 @@
 <footer class="footer">
-  <!--
+  <div class="SocialLinks">
   {% for item in site.social %}
-    <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
+    <a href="{{ item.link }}" class="{{item.name}} social-button borderless" target="_blank"><i aria-hidden="true"></i></a>
+    <!--<a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>-->
   {% endfor %}
-   -->
+  </div>
   <div class="post-date"><a href="{{ site.github.url }}/">{{ site.title }} | {{ site.tagline }} by {{ site.author.name }}</a></div>
 
   <div class="third">
-    <h4>...or borderless</h4>
-      <style>
-    ol {
-      list-style-type: none;
-      padding: 0;margin: 0;
-    }
-    ol li {
-      display: inline-block;
-      margin: 4px;
-    }
-
-    .social-button.borderless {
-      padding: 0 16px;
-    }
-  </style>
   	<ol>
       <li><a class="icon-facebook social-button borderless" href="http://facebook.com/Schiefer.Chris"></a></li>
       <li><a class="icon-twitter social-button borderless" href="http://twitter.com/username"></a></li>
@@ -40,5 +26,5 @@
     	</ol>
   </div>
 
-   -->
+
 </footer>

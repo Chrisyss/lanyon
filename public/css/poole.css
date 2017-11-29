@@ -63,6 +63,39 @@ body {
   background-color: #2e2e2e;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  border-bottom-color:rgb(158, 158, 158);
+
+  border-bottom-style:none;
+  border-bottom-width:0px;
+  border-image-outset:0px;
+  border-image-repeat:stretch;
+  border-image-slice:100%;
+  border-image-source:none;
+  border-image-width:1;
+  border-left-color:rgb(158, 158, 158);
+  border-left-style:none;
+  border-left-width:0px;
+  border-right-color:rgb(158, 158, 158);
+  border-right-style:none;
+  border-right-width:0px;
+  border-top-color:rgb(158, 158, 158);
+  border-top-style:none;
+  border-top-width:0px;
+  /*
+  display:inline;
+  color:rgb(158, 158, 158);
+  font-family:futura-pt;
+  font-size:15px;
+  font-style:normal;
+  font-weight:300;
+  height:263.625px;
+  letter-spacing:1px;
+  line-height:1px;
+  text-size-adjust:100%;
+  text-transform:none;
+  vertical-align:middle;
+  width:524px
+  */
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */

@@ -144,12 +144,12 @@ margin-left: 15px;
 }
 }
 .masthead-title a {
-  color: hsla(199, 100%, 62%, 1);
+  color: hsla(199, 100%, 66%, 1);
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: #c0c0c0;
+  color: #ffffff;
   letter-spacing: 0;
 }
 
@@ -236,7 +236,7 @@ margin-left: 15px;
 .sidebar-Mainnav-item {
   /* padding-left:10px; */
   /* padding-right: 10px; */
-  padding-top: 54px;
+  /* padding-top: 54px; */
   /* padding-bottom: 5px; */
   /* border-top: 1px solid rgba(255,255,255,.1); */
   -webkit-font-smoothing: subpixel-antialiased;
@@ -386,7 +386,7 @@ HIDEEEEEEEEE Menu List and add Side List
   a.menu-link:hover,
   a.menu-link:focus {
 
-color: hsla(34, 34%, 61%, 1);
+color: hsla(34, 86%, 62%, 1);
 
 
 
@@ -407,7 +407,7 @@ border-color: transparent;
     list-style-image: none;
     list-style-position: none;
     list-style-type: none;
-    margin-right: 7px;
+    margin-right: 39px;
     padding-bottom: 8.4px;
     padding-left: 0;
     padding-top: 15.4px;

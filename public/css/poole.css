@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: CenturyGothic;
+  font-family: Ceh;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -141,48 +141,11 @@ p {
   margin-bottom: 1rem;
 }
 
-Signed-Website {
- color: rgb(107, 107, 107);
-    cursor:default;
-    text-decoration:
-    display: inline-block;
-    font-family:CenturyGothic;
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 300;
-    height: auto;
-    letter-spacing: 4px;
-    line-height: 20px;
-    list-style-image: none;
-    list-style-position: none;
-    list-style-type: none;
-    margin-right: 7px;
-    padding-bottom: 8.4px;
-    padding-left: 0;
-    padding-top: 15.4px;
-    text-align: left;
-    text-decoration-color: rgb(107, 107, 107);
-    text-decoration-line: none;
-    text-decoration-style: none;
-    text-size-adjust: 100%;
-    text-transform: uppercase;
-    width: auto;
+strong {
+  color: #b6b6b6;
 }
 
-  @media (max-width: 650px) {
-    .menu-list {
-      display: none;
-    }
-  }
 
-  .Signed-Website.active,
-  a.Signed-Website:hover,
-  a.Signed-Website:focus {
-cursor:default;
-color: rgb(236, 197, 82);
-border-color: transparent;
-
-}
 /* Lists */
 ul, ol, dl {
   margin-top: 0;

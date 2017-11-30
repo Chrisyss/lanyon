@@ -266,12 +266,10 @@ img {
   margin: 0 0 1rem;
   border-radius: 5px;
   height: auto;
-  width: auto;
-  max-width: 1800px;
+  width: -webkit-fill-available;
+  /*max-width: 1800px;*/
   /* max-height: 1800px; */
   /* text-align: center; */
-
-
   /*border-bottom-color: rgb(158, 158, 158);
 border-bottom-style: none;
 border-bottom-width: 0px;

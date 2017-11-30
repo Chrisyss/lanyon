@@ -232,7 +232,7 @@ HIDEEEEEEEEE Menu List and add Side List
 
 */
 
-@media  (min-width: 1400px){
+@media  (min-width: 1500px){
   .sidebar-toggle{
     display: none;
   }
@@ -317,7 +317,7 @@ HIDEEEEEEEEE Menu List and add Side List
   width: auto;
   }
 
-  @media (max-width: 11px) {
+  @media (max-width: 1500px) {
     .menu-list {
       display: none;
     }

@@ -45,7 +45,7 @@ body {
 
 html {
 /*  font-family: "PT Serif", Georgia, "Times New Roman", serif; */
-    font-family:
+    font-family: CenturyGothic;
 }
 
 h1, h2, h3, h4, h5, h6 {/*  font-family: "PT Sans", Helvetica, Arial, sans-serif; */font-weight: 400;/* color: #313131; */letter-spacing: -.025rem;/* padding-left: 15px; */}
@@ -93,16 +93,55 @@ h1, h2, h3, h4, h5, h6 {/*  font-family: "PT Sans", Helvetica, Arial, sans-serif
  */
 
 .masthead {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
-  border-bottom: 1px solid #eee;
+  padding-top: 21px;
+  padding-bottom: 10px;
+  margin-bottom: 2px;
+  /* border-bottom: 1px solid rgba(238, 238, 238, 0.2); */
+  /* background-color: hsla(0, 0%, 0%, 0.22); */
+  /* backface-visibility: hidden; */
+  background-color: rgba(0, 0, 0, 0.44);
+  /* border-bottom-left-radius: 25px; */
+  /* border-bottom-right-radius: 25px; */
+  /* border-top-left-radius: 25px; */
+  /* border-top-right-radius: 25px; */
+  /* box-sizing: border-box; */
+  color: rgb(80, 80, 80);
+  /* cursor: pointer; */
+  /* display: block; */
+  /* font-family: "Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif; */
+  /* font-size: 20px; */
+  /* height: 32px; */
+  /* left: 5px; */
+  /* line-height: 30px; */
+  /* padding-bottom: 2px; */
+  /* padding-left: 4px; */
+  /* padding-right: 0px; */
+  /* padding-top: 0px; */
+  position:static;
+  /* text-size-adjust: 100%; */
+  /* top: 21px; */
+  /* transition-delay: 0s; */
+  /* transition-duration: 0.3s; */
+  /* transition-property: transform; */
+  /* transition-timing-function: ease-in-out; */
+  width: -webkit-fill-available;
 }
+
+.masthead {}
 .masthead-title {
   /* margin-top: 0; */
   margin-bottom: 0;
   color: #505050;
-  margin-left: 15px;
+  margin-left: 0px;
+}
+@media (max-width: 650px) {
+.masthead {}
+.masthead-title {
+margin-left: 15px;
+}
 }
 .masthead-title a {
   color: hsla(199, 100%, 62%, 1);
@@ -149,18 +188,26 @@ h1, h2, h3, h4, h5, h6 {/*  font-family: "PT Sans", Helvetica, Arial, sans-serif
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: CenturyGothic;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
   -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 @media (min-width: 30em) {
   .sidebar {
     font-size: .75rem; /* 14px */
   }
 }
+
+@media  (min-width: 650px){
+  .sidebar {
+    display: none;
+   position:fixed;
+  }
+}
+
 
 /* Sidebar content */
 .sidebar a {
@@ -232,7 +279,7 @@ a.sidebar-nav-item:focus {
   padding-right: -5px;
   padding-top: -5px;
   padding-bottom: 2px;
-  color: #505050;
+  /* color: #505050; */
   /* background-color: #fff; */
   border-radius: 1.25rem;
   cursor: pointer;
@@ -244,7 +291,7 @@ HIDEEEEEEEEE Menu List and add Side List
 
 */
 
-@media  (min-width: 1500px){
+@media  (min-width: 650px){
   .sidebar-toggle{
     display: none;
   }
@@ -267,17 +314,18 @@ HIDEEEEEEEEE Menu List and add Side List
 .sidebar-toggle:active,
 #sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: #fff;
-  background-color: #555;
+  color: #f00;
+  /* background-color: #555; */
 }
 
+
 .sidebar-toggle:active:before,
-#sidebar-checkbox:focus ~ .sidebar-toggle:before,
+#sidebar-checkbox:hover ~ .sidebar-toggle:before,
 #sidebar-checkbox:checked ~ .sidebar-toggle:before {
   background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
   background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
   background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
-  background-image:         linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
+  background-image: linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, hsl(199, 100%, 62%) 60%, #555 80%, #fff 80%, #fff 100%);
 }
 
 @media (min-width: 30.1em) {
@@ -329,17 +377,27 @@ HIDEEEEEEEEE Menu List and add Side List
   width: auto;
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 650px) {
     .menu-list {
       display: none;
     }
   }
+  .menu-link.active,
+  a.menu-link:hover,
+  a.menu-link:focus {
 
+color: hsla(34, 34%, 61%, 1);
+
+
+
+border-color: transparent;
+
+}
   .menu-link{
     color: rgb(107, 107, 107);
     cursor: auto;
     display: inline-block;
-    font-family: futura-pt;
+    font-family:CenturyGothic;
     font-size: 19px;
     font-style: normal;
     font-weight: 300;
@@ -376,23 +434,25 @@ HIDEEEEEEEEE Menu List and add Side List
  * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
  */
 
+
 .wrap,
 .sidebar,
 .sidebar-toggle {
   -webkit-backface-visibility: hidden;
-      -ms-backface-visibility: hidden;
-          backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .wrap,
 .sidebar-toggle {
   -webkit-transition: -webkit-transform .3s ease-in-out;
-          transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
 }
 
 #sidebar-checkbox:checked + .sidebar {
   z-index: 10;
   visibility: visible;
 }
+@media (max-width: 650px) {
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
@@ -400,6 +460,9 @@ HIDEEEEEEEEE Menu List and add Side List
       -ms-transform: translateX(14rem);
           transform: translateX(14rem);
 }
+}
+
+
 
 
 /*
@@ -493,7 +556,7 @@ HIDEEEEEEEEE Menu List and add Side List
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+font-family: CenturyGothic;
   color: #ccc;
   text-align: center;
 }

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: CenturyGothic;
+    src: url("../fonts/futura-pt-light-oblique-589e448ae90e2.ttf") format('truetype');
+    font-weight: 400;
+		/*speak: none;*/
+    font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+}

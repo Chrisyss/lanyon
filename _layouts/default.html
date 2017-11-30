@@ -18,11 +18,27 @@
             <small>{{ site.tagline }}</small>
           </h3>
           <div class="menu-list">
-            {% for items in site.menu %}
-
+            <!-- {% for items in site.menu %}
               <a href="{{ site.baseurl }}{{ items.folder }}/{{ items.filename }}/index.html" class="menu-link">{{ items.name }}</a>
             {% endfor %}
+          </div> -->
+
+          {% comment %}
+            The code below dynamically generates a sidebar nav of pages with
+            `layout: page` in the front-matter. See readme for usage.
+          {% endcomment %}
+
+          {% assign pages_list = site.pages | sort:"url" %}
+          {% for node in pages_list %}
+            {% if node.title != null %}
+              {% if node.layout == "page" %}
+<a  href="{{site.baseurl}}{{ node.url }}"class="menu-link">{{ node.title }}</a>
+                <!-- <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}{{ node.url }}">{{ node.title }}</a> -->
+              {% endif %}
+            {% endif %}
+          {% endfor %}
           </div>
+
         </div>
 
       </div>
@@ -30,8 +46,9 @@
       <div class="container content">
         {{ content }}
       </div>
+        {% include footer.html %}
     </div>
-    {% include footer.html %}
+
     </div>
     </div>
 

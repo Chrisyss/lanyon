@@ -1,0 +1,7 @@
+<Gallery class="Gallery">
+   <div>
+      {% for items in site.imagefiles %}
+      <img src="{{ site.baseurl }}public/images/{{items.file}}" alt="items.name">
+      {% endfor %}
+   </div>
+</Gallery>

@@ -44,15 +44,11 @@ body {
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+/*  font-family: "PT Serif", Georgia, "Times New Roman", serif; */
+    font-family:
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: #313131;
-  letter-spacing: -.025rem;
-}
+h1, h2, h3, h4, h5, h6 {/*  font-family: "PT Sans", Helvetica, Arial, sans-serif; */font-weight: 400;/* color: #313131; */letter-spacing: -.025rem;/* padding-left: 15px; */}
 
 
 /*
@@ -76,16 +72,16 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .container {
-  max-width: 28rem;
+  /* max-width: 28rem; */
 }
 @media (min-width: 38em) {
   .container {
-    max-width: 32rem;
+    /* max-width: 32rem; */
   }
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 38rem;
+    /* max-width: 38rem; */
   }
 }
 
@@ -103,12 +99,13 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #eee;
 }
 .masthead-title {
-  margin-top: 0;
+  /* margin-top: 0; */
   margin-bottom: 0;
   color: #505050;
+  margin-left: 15px;
 }
 .masthead-title a {
-  color: #00a4f0;
+  color: hsla(199, 100%, 62%, 1);
 }
 .masthead-title small {
   font-size: 75%;
@@ -119,10 +116,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 48em) {
   .masthead-title {
-    text-align: center;
+    /* text-align: center; */
   }
   .masthead-title small {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -143,6 +140,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 /* Style and "hide" the sidebar */
+/*@media only screen and (max-width: 155px)*/
 .sidebar {
   position: fixed;
   top: 0;
@@ -215,15 +213,32 @@ a.sidebar-nav-item:focus {
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
   position: absolute;
-  top:  .8rem;
-  left: 1rem;
+  top: 21px;
+  left: 5px;
   display: block;
-  padding: .25rem .75rem;
+  padding-left: 4px;
+  padding-right: -5px;
+  padding-top: -5px;
+  padding-bottom: 2px;
   color: #505050;
   /* background-color: #fff; */
   border-radius: 1.25rem;
   cursor: pointer;
 }
+
+/*
+
+HIDEEEEEEEEE Menu List and add Side List
+
+*/
+
+@media  (min-width: 1400px){
+  .sidebar-toggle{
+    display: none;
+  }
+}
+
+
 
 .sidebar-toggle:before {
   display: inline-block;
@@ -235,6 +250,7 @@ a.sidebar-nav-item:focus {
   background-image:     -ms-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
   background-image:         linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
 }
+
 
 .sidebar-toggle:active,
 #sidebar-checkbox:focus ~ .sidebar-toggle,
@@ -263,6 +279,77 @@ a.sidebar-nav-item:focus {
     display: none;
   }
 }
+
+
+
+  .menu-list{
+  /* box-sizing: border-box; */
+  color: rgb(158, 158, 158);
+  display: block;
+  /* font-family: "PT Serif",
+  Georgia,
+  "Times New Roman",
+  serif; */
+  /* font-size: 20px; */
+  height: auto;
+  /* position: relative; */
+  /* margin-right: 25px; */
+  /* letter-spacing: normal; */
+  /* line-height: 30px; */
+  /* white-space: normal; */
+  /* text-size-adjust: 100%; */
+  /* width: 1043.64px; */
+  color: rgb(143, 143, 143);
+  display: block;
+  /* float: left; */
+  /* font-family: futura-pt; */
+  /* font-size: 13px; */
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  /* height: 40.7917px; */
+  /* letter-spacing: 1px; */
+  /* line-height: 20.8px; */
+  /* text-decoration-color: rgb(143, 143, 143); */
+  /* text-decoration-line: none; */
+  /* text-decoration-style: solid; */
+  /* text-size-adjust: 100%; */
+  /* text-transform: uppercase; */
+  width: auto;
+  }
+
+  @media (max-width: 11px) {
+    .menu-list {
+      display: none;
+    }
+  }
+
+  .menu-link{
+    color: rgb(107, 107, 107);
+    cursor: auto;
+    display: inline-block;
+    font-family: futura-pt;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    height: auto;
+    letter-spacing: 4px;
+    line-height: 20px;
+    list-style-image: none;
+    list-style-position: none;
+    list-style-type: none;
+    margin-right: 7px;
+    padding-bottom: 8.4px;
+    padding-left: 0;
+    padding-top: 15.4px;
+    text-align: left;
+    text-decoration-color: rgb(107, 107, 107);
+    text-decoration-line: none;
+    text-decoration-style: none;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    width: auto;
+  }
+
 
 /* Slide effect
  *
@@ -319,7 +406,7 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #268bd2;
 }
 .page-title,
 .post-title {

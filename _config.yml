@@ -3,22 +3,31 @@
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
 relative_permalinks: false
-
+gems: [jekyll-paginate]
+paginate:            5
 # Setup
 title:               Christopher Schiefer
 tagline:             'Concept Designer'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:         'Concept Designera'
 url:                 http://lanyon.getpoole.com
 baseurl:             '/lanyon/'
-paginate:            5
+
 FacebookFollowPluginURL: 'https://www.facebook.com/plugins/follow?href=https%3A%2F%2Fwww.facebook.com%2FSchiefer.Chris&layout=standard&show_faces=true&colorscheme=dark&width=250&height=20'
 menu:
-- {name: 'Interesting Facts', folder: 'pages', file: 'facts.html'}
-- {name: 'Learning Resources', folder: 'pages', file: 'resources.html'}
-- {name: 'Sample Posts', folder: 'pages', file: 'sample-posts.html'}
-- {name: 'Documentation', folder: 'pages', file: 'documentation.html'}
-- {name: 'About', folder: 'pages', file: 'about.html'}
-- {name: 'Contact', folder: 'pages', file: 'contact.html'}
+- {name: 'Interesting Facts', folder: 'pages', filename: 'facts'}
+- {name: 'Learning Resources', folder: 'pages', filename: 'resources'}
+- {name: 'Sample Posts', folder: 'pages', filename: 'sample-posts'}
+- {name: 'Documentation', folder: 'pages', filename: 'documentation'}
+- {name: 'About', folder: 'pages', filename: 'about'}
+- {name: 'Contact', folder: 'pages', filename: 'contact'}
+
+imagefiles:
+- {name: 'Futuristic Female', file: 'Figure_FuturisticArmorNavy3.jpg'}
+- {name: 'Baroque Opera', file: '1003_Int_OperaBaroqueDancing8_Sign_Low.jpg'}
+- {name: 'Egyptian Gods', file: '1008_EXT_EgyptGods_GoldenRiver5_Volume.jpg'}
+- {name: 'Kingdom', file: '1009_EXT_KingdomofHeaven_RenaissanceCastleGodsStatues.jpg'}
+- {name: 'Alley', file: 'EXT_AlleyHistoric3_Schiefer.jpg'}
+- {name: 'Harry Potter', file: '1004_Int_HarryPotterStairs_M_CS161225.jpg'}
 
 social:
 - {name: 'facebook', link: 'http://facebook.com/Schiefer.Chris'}

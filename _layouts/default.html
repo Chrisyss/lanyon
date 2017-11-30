@@ -11,17 +11,28 @@
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
       <div class="masthead">
+
         <div class="container">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
           </h3>
-        </div>
-      </div>
+          <div class="menu-list">
+            {% for items in site.menu %}
 
+              <a href="{{ site.baseurl }}{{ items.folder }}/{{ items.filename }}/index.html" class="menu-link">{{ items.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+        <!-- {% include Gallery.html %} -->
       <div class="container content">
         {{ content }}
       </div>
+    </div>
+    {% include footer.html %}
+    </div>
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
@@ -44,9 +55,6 @@
       })(document);
     </script>
 
-  </div>
-  {% include footer.html %}
-  </div>
 
   </body>
 </html>

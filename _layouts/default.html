@@ -2,8 +2,10 @@
 <html lang="en-us">
 
   {% include head.html %}
+  <!-- <body class="sidebar-overlay"> -->
 
   <body>
+
 
     {% include sidebar.html %}
 
@@ -13,10 +15,10 @@
       <div class="masthead">
 
         <div class="container">
-          <h3 class="masthead-title">
+          <div class="masthead-title">
             <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
-          </h3>
+          </div>
           <div class="menu-list">
             <!-- {% for items in site.menu %}
               <a href="{{ site.baseurl }}{{ items.folder }}/{{ items.filename }}/index.html" class="menu-link">{{ items.name }}</a>
@@ -74,4 +76,6 @@
 
 
   </body>
+
+<!-- </body> -->
 </html>

@@ -13,6 +13,13 @@ description:         '24 year old Dedicated Concept designer and Instructor'
 url:                 https://chrisyss.github.io
 baseurl:             '/lanyon/'
 
+
+tipue_search:
+  include:
+    pages: true
+  exclude:
+    files: [search.html]
+
 FacebookFollowPluginURL: 'https://www.facebook.com/plugins/follow?href=https%3A%2F%2Fwww.facebook.com%2FSchiefer.Chris&layout=standard&show_faces=true&colorscheme=dark&width=250&height=20'
 menu:
 - {name: 'Interesting Facts', folder: 'pages', filename: 'facts'}

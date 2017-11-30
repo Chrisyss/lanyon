@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Example content
+tipue_search_active: true
+exclude_from_search: false
+Tags : tasd wad wdwwdwd
 ---
 
 

@@ -271,7 +271,7 @@ a.sidebar-nav-item:focus {
 
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
-  position: absolute;
+  position: fixed;
   top: 21px;
   left: 5px;
   display: block;
@@ -737,15 +737,34 @@ a.pagination-item:hover {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
+
 }
 .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
-  box-shadow: 0 0 0 .25rem #fff;
+ position: fixed;
+  filter: alpha(opacity=60);
+/* IE */
+  -moz-opacity: 0.6;
+    /* Mozilla */
+opacity: 0.6;
+  /* CSS3 */
 }
 .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
-  box-shadow: .25rem 0 .5rem rgba(0,0,0,.1);
+   position: fixed;
+  filter: alpha(opacity=60);
+/* IE */
+  -moz-opacity: 0.6;
+    /* Mozilla */
+opacity: 0.6;
+  /* CSS3 */
 }
 
 /* Only one tweak for a reverse layout */
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
-  box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
+   position: fixed;
+  filter: alpha(opacity=60);
+/* IE */
+  -moz-opacity: 0.6;
+    /* Mozilla */
+opacity: 0.6;
+  /* CSS3 */
 }
